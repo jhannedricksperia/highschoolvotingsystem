@@ -11,10 +11,10 @@ The system streamlines the election process by providing authenticated student l
 - **Instant Results** – Transparent and quick result display  
 
 ## Tech Stack
-- **Frontend:** HTML, CSS, JavaScript (or framework if used)  
-- **Backend:** Node.js / PHP / (your backend choice)  
-- **Database:** MySQL / MongoDB / (your database choice)  
-- **Hosting:** Web server or cloud-based deployment  
+- **Frontend:** HTML, CSS, JavaScript
+- **Backend:** PHP 
+- **Database:** MySQL
+- **Hosting:** Localhost/ XAMPP
 
 ## Creators
 - **Senior Developer:** Jhann Edrick S. Peria  
