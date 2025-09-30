@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+    min-height: 100vh;
+    background-image: url('/votingsystem/images/mainBackground.png');
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+.content-wrapper {
+    flex: 1 0 auto;
+}
+
+.lalagyan{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 60px;
+}
+
+
+#forgot{
+    margin-top: 100px;
+}
+
+.login-box {
+    display: flex;
+    width: 100%;
+    max-height: 720px;
+    background: transparent;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+@media (max-width: 900px) {
+    .login-box {
+        flex-direction: column;
+        max-height: none;
+    }
+}
+
+.left-panel {
+    flex: 1;
+    padding-top: 13px;
+    padding-left: 20px;
+    background: transparent;
+}
+
+.left-panel .logo {
+    width: 70px;
+    margin-bottom: 10px;
+}
+
+
+.left-panel h1 {
+    font-size: 50px;
+    margin: 20px 0;
+    font-weight: bold;
+    text-align: center;
+    color: #ffffff;
+}
+
+.toggle-buttons {
+    display: flex;
+    width: 300px;
+    margin-bottom: 20px;
+}
+.header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 60px;
+    height: auto;
+}
+
+.school-info h2 {
+    font-size: 22px;
+    font-weight: 700;
+    margin: 0;
+    color: #ffffff;
+}
+
+.school-info p {
+    font-size: 14px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0;
+}
+
+#schoolAddress{
+    font-style: italic;
+    font-weight: 500;
+}
+
+.toggle-buttons {
+    display: flex;
+    background-color: #4caf50;
+    border-radius: 50px;
+    padding: 2px;
+    width: 350px;
+    justify-content: space-between;
+    position: relative;
+}
+
+.toggle-buttons button {
+    flex: 1;
+    width: 50%;
+    border: none;
+    outline: none;
+    padding: 10px 0;
+    background: transparent;
+    background-color: #4caf50;
+    color: white;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.toggle-buttons button.active {
+    flex: 1.5;
+    background-color: white;
+    color: #4caf50;
+}
+
+input[type="password"],
+input[type="text"] {
+    width: 350px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #4caf50;
+    border-radius: 20px;
+    outline: none;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+    margin-top: 0px;
+    margin-left: 10px;
+    text-align: left;
+    display: block;
+    width: 350px;
+}
+
+.confAndBack{
+    width: 350px;
+}
+
+.btn {
+    padding: 12px;
+    background: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#loginBtn{
+    width: 350px;
+}
+#confirmBtn{
+    width: 255px;
+    float: right;
+}
+#backBtn{
+    width: 80px;
+    float: left;
+}
+
+.btn:hover{
+    padding: 9px;
+    background: white;
+    color: #4caf50;
+    border: solid;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.forgot {
+    width: 340px;
+    text-align: right;
+    color: #ffffff;
+    font-size: 12px;
+    text-decoration: none;
+    margin-top: 8px;
+}
+
+.right-panel {
+    flex: 1;
+    padding: 15px;
+    display: flex; /* Added */
+    align-items: center; /* Added */
+}
+
+.right-panel img {
+    width: 100%;
+    height: 100%; 
+    border-radius: 20px;
+    object-fit: cover;
+}
+/* footer css  */
+.centerMain {
+    flex: 1;
+    width: 100%;
+    padding-bottom: 50px;
+}
+.footer {
+    width: 100%;
+    background-color: rgba(0,0,0,0.75);
+    color: white;
+    padding: 24px 0 12px 0;
+    margin-top: auto;
+}
+
+.footer-content {
+    padding: 0 0 0 180px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.footer-section {
+    flex: 1 1 0;
+    padding: 0 20px;
+    min-width: 0;
+    overflow-wrap: break-word;
+    text-align: left;
+}
+
+.footer-title {
+    font-weight: 700;
+    font-size: 17px;
+    margin-bottom: 12px;
+    color: #36AE66;
+    text-align: center;
+}
+
+.footer-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 16px;
+    line-height: 1.4;
+    column-count: 2;
+    column-gap: 16px;
+    text-align: left;
+}
+
+.footer-section p,
+.footer-section ul,
+.footer-section li {
+    font-size: 13px;
+    font-weight: 400;
+    color: #fff;
+    text-align: left;
+}
+
+footer, .footer {
+  margin-top: 0;
+  width: 100%;
+  border-top: 1px solid #36AE66;
+}
+
+
+@media (max-width: 900px) {
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding: 0;
+    }
+    .footer-section {
+        padding: 0 0 10px 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .footer {
+        font-size: 14px;
+        padding: 10px 2px 6px 2px;
+    }
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 0;
+    }
+    .footer-section {
+        padding: 0 0 8px 0;
+    }
+    .footer-list {
+        column-count: 1;
+        font-size: 14px;
+    }
+}

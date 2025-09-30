@@ -1,0 +1,324 @@
+/* Management Table Styles - Reusable */
+.management-container {
+background: rgba(0, 0, 0, 0.75);
+border-radius: 10px;
+padding: 32px;
+margin: 32px auto;
+color: white;
+max-width: 1500px;
+width: 100%;
+box-sizing: border-box;
+}
+.management-header h2{
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-bottom: 10px;
+font-size: 36px;
+}
+
+.table-container {
+overflow-x: unset;
+width: 100%;
+}
+
+table.management-table {
+width: 100%;
+border-collapse: collapse;
+margin-top: 10px;
+color: white;
+table-layout: auto;
+}
+
+.management-table th, .management-table td {
+padding: 8px 6px;
+text-align: center;
+border-bottom: 1px solid #444;
+color: white;
+word-break: break-word;
+white-space: normal;      /* <-- Allow text to wrap */
+overflow-wrap: anywhere;  /* <-- Break long words if needed */
+max-width: 120px;         /* Reduced for more columns */
+font-size: 13px;          /* Smaller font for more content */
+}
+
+.action-buttons {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    justify-content: center;
+    min-width: 100%;
+}
+
+.btn-edit, .btn-delete, .btn-show-key {
+    padding: 6px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 13px;
+    white-space: nowrap;
+    margin: 0;
+}
+
+.btn-edit {
+    background: #2196F3;
+    color: white;
+    flex: 1;
+    transition: background 0.2s;
+}
+.btn-edit:hover {
+    background: #1769aa;
+}
+
+.btn-delete {
+    background: #f44336;
+    color: white;
+    flex: 1;
+    transition: background 0.2s;
+}
+.btn-delete:hover {
+    background: #b71c1c;
+}
+
+.btn-show-key {
+    background: #ff9800;
+    color: white;
+    flex: 1;
+    transition: background 0.2s;
+}
+.btn-show-key:hover {
+    background: #b26a00;
+}
+
+.btn-add {
+    background: #36AE66;
+    font-size: 100%;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+    transition: background 0.2s;
+}
+
+.btn-add:hover {
+    background: #2d8f52;
+    color: #fff;
+}
+
+@media (max-width: 700px) {
+    .action-buttons {
+        flex-direction: column;
+        min-width: unset;
+        gap: 4px;
+    }
+    .btn-edit, .btn-delete, .btn-show-key {
+        width: 100%;
+        font-size: 12px;
+    }
+}
+.search-filter {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    align-items: center;
+    background: rgba(54, 174, 102, 0.08);
+    padding: 10px 16px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(54, 174, 102, 0.05);
+    width: calc(100% - 32px); /* Account for padding */
+    max-width: 100%;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.search-filter-controls {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex: 1;
+    justify-content: flex-end;
+}
+
+.search-filter input[type="text"],
+.search-filter select {
+    padding: 8px 14px;
+    border-radius: 5px;
+    border: 1px solid #36AE66;
+    background: #ffffff;
+    color: #000000;
+    font-size: 15px;
+    outline: none;
+    transition: border 0.2s, box-shadow 0.2s;
+}
+
+
+
+.search-filter input[type="text"]{
+    width: 350px;
+}
+#searchVote {
+    margin-left: auto;
+    width: 200px;
+}
+@media (max-width: 700px) {
+    .search-filter {
+        flex-direction: column;
+        align-items: stretch;
+        max-width: 100%;
+        padding: 8px 4px;
+    }
+    .search-filter input[type="text"],
+    .search-filter select {
+        width: 100%;
+        margin-bottom: 6px;
+    }
+    .search-filter-controls {
+        flex-direction: column;
+        align-items: stretch;
+        width: 100%;
+        gap: 6px;
+    }
+}
+
+.search-filter .btn-add {
+    margin-bottom: 0;
+    margin-right: 10px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+}
+
+.modal-key {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.7);
+}
+.modal-key-content {
+    background-color: #222;
+    color: #fff;
+    margin: 10% auto;
+    padding: 20px 30px;
+    border: 1px solid #888;
+    width: 320px;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+}
+.close-key {
+    color: #fff;
+    position: absolute;
+    right: 18px;
+    top: 8px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.agenda-list {
+    text-align: left;
+    list-style-type: disc; 
+    padding-left: 20px;
+    margin-bottom: 10px;
+    margin-top: 0;
+    /* Ensure agenda list and buttons are grouped visually */
+}
+
+.agenda-actions {
+    display: flex;
+    gap: 8px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.btn-agenda {
+    background: #2196F3;
+    color: #fff;
+    border: none;
+    padding: 3px 7px;      /* Even smaller padding */
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 10px;       /* Smaller font */
+    transition: background 0.2s;
+    min-width: 60px;       /* Smaller min width */
+    text-align: center;
+    margin: 0;
+    display: inline-block;
+}
+
+.btn-agenda:hover {
+    background: #1769aa;
+}
+
+.btn-agenda.addAgendaBtn {
+    background: #36AE66;      /* Green for Add */
+    color: #fff;
+}
+.btn-agenda.addAgendaBtn:hover {
+    background: #27894d;
+}
+
+.btn-agenda.removeAgendaBtn {
+    background: #f44336;      /* Red for Remove */
+    color: #fff;
+}
+.btn-agenda.removeAgendaBtn:hover {
+    background: #b71c1c;
+}
+
+/* Responsive: stack agenda buttons on small screens */
+@media (max-width: 700px) {
+    .agenda-actions {
+        flex-direction: column;
+        gap: 6px;
+    }
+    .btn-agenda {
+        width: 100%;
+        min-width: unset;
+    }
+}
+
+/* Status styling */
+.status-active {
+    color: #4caf50 !important;
+    font-weight: 600;
+}
+
+.status-inactive {
+    color: #f44336 !important;
+    font-weight: 600;
+}
+
+/* Date column styling */
+.management-table td:nth-child(6),
+.management-table td:nth-child(8) {
+    max-width: 100px;
+    font-size: 12px;
+}
+
+/* Username column styling */
+.management-table td:nth-child(2) {
+    max-width: 100px;
+}
+
+/* Status column styling */
+.management-table td:nth-child(3) {
+    max-width: 80px;
+}
+
+/* Security Key column styling */
+.management-table td:nth-child(4) {
+    max-width: 100px;
+}
